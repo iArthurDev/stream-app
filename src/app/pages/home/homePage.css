@@ -1,0 +1,12 @@
+.home-container {
+  padding: 0.1px;
+  width: auto;
+  height: 100%;
+}
+
+.content-home-container {
+  margin-top: 7%;
+  width: auto;
+  height: 100%;
+  border: 2px solid rgb(44, 150, 203);
+}
