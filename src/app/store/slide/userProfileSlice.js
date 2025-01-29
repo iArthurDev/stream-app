@@ -5,7 +5,6 @@ export const userProfileSlice = createSlice({
   initialState: { userName: "", urlImageProfile: "" },
   reducers: {
     selectProfile: (state, action) => {
-      console.log("Entro al reducer");
       state.userName = action.payload.userName;
       state.urlImageProfile = action.payload.urlImageProfile;
     },

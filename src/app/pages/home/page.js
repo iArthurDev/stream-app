@@ -8,10 +8,9 @@ import { useSelector } from "react-redux";
 export default function HomePageComponent() {
   const userProfile = useSelector((state) => state.profile);
 
-  console.log("Perfil guardado:", userProfile);
   useEffect(() => {
-    console.log("Perfil actualizado:", userProfile);
-  }, [userProfile]);
+    alert(`Bienvenido ${userProfile.userName}`);
+  }, []);
 
   return (
     <div className="home-container">

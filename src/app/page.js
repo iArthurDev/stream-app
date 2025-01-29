@@ -1,3 +1,4 @@
+"use client";
 import ProfilePageComponent from "./pages/profile/page";
 
 export default function Index() {

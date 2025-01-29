@@ -6,12 +6,17 @@ export const ProfileSlice = createSlice({
     {
       idUser: 1,
       userName: "Admin",
-      urlImageProfile: "/images/profiles/r2d2.jpg",
+      urlImageProfile: "/images/profiles/peliculas/r2d2.jpg",
     },
     {
       idUser: 2,
       userName: "LuisD",
-      urlImageProfile: "/images/profiles/aquaman.jpg",
+      urlImageProfile: "/images/profiles/seriesAnimadas/luffy.jpg",
+    },
+    {
+      idUser: 3,
+      userName: "ioMero",
+      urlImageProfile: "/images/profiles/superheroes/ironman.jpg",
     },
   ],
   reducers: {

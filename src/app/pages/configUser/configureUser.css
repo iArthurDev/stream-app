@@ -1,0 +1,22 @@
+.ConfigUserPage {
+  height: 100vh;
+  display: flex;
+}
+
+.columnaProfilesDashborad {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+}
+
+.columnaImagesDashborad {
+  flex: 1;
+}
+
+.profilesDashborad-container {
+  margin-top: 2%;
+  width: 90%;
+  background-color: rgb(43, 43, 43);
+  border-radius: 30px;
+  height: 70%;
+}
