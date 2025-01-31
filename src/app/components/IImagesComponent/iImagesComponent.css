@@ -1,0 +1,34 @@
+.categoryDetails {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categoryDetails p {
+  font-size: 1.5rem;
+}
+
+.img-container {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  gap: 1rem;
+}
+
+.img-selected {
+  border: 5px solid rgb(119, 32, 112);
+}
+
+.img-item {
+  border-radius: 50px;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.img-item:hover {
+  transform: scale(1.1);
+}

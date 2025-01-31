@@ -106,7 +106,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .btn-admin-profiles {

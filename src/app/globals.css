@@ -6,8 +6,8 @@ body {
   max-height: auto;
   overflow-x: hidden;
   background: radial-gradient(circle, rgb(34, 34, 34), rgb(15, 15, 15));
-  color: white;
-  font-family: "Roboto", sans-serif;
+  color: white !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 * {

@@ -1,15 +1,28 @@
 .imgDashboard-container {
-  width: 100%;
+  margin-left: 2%;
+  width: 95%;
   height: 100%;
+  padding: 1px;
+}
+
+.btn-safeChanges-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.form-container {
+  width: 50%;
 }
 
 .img-categoriescontainer {
   width: 100%;
   height: auto;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.category {
+.categoryDetails {
   width: 100%;
   height: 25vh;
   display: flex;
@@ -17,7 +30,7 @@
   gap: 1rem;
 }
 
-.category p {
+.categoryDetails p {
   font-size: 1.7rem;
 }
 

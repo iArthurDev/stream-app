@@ -9,8 +9,8 @@ export default function ProfilePageComponent() {
   const profiles = useSelector((state) => state.profiles);
   const dispatch = useDispatch();
 
-  const handleProfileSelect = (userName, urlImage) => {
-    const profile = { userName, urlImageProfile: urlImage };
+  const handleProfileSelect = (id, userName, urlImage) => {
+    const profile = { idUser: id, userName, urlImageProfile: urlImage };
     dispatch(selectProfile(profile));
     console.log("Perfil seleccionado:", profile);
   };
@@ -24,7 +24,11 @@ export default function ProfilePageComponent() {
             <div
               className="profile"
               onClick={() =>
-                handleProfileSelect(profile.userName, profile.urlImageProfile)
+                handleProfileSelect(
+                  profile.idUser,
+                  profile.userName,
+                  profile.urlImageProfile
+                )
               }
             >
               <div className="img-profile">

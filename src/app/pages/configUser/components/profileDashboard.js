@@ -3,7 +3,11 @@ import Link from "next/link";
 import "./profileDashborad.css";
 import { useSelector } from "react-redux";
 
-export default function ProfileDashboardComponent() {
+export default function ProfileDashboardComponent({
+  onMostrar,
+  onFound,
+  setProfileSelected,
+}) {
   const profiles = useSelector((state) => state.profiles);
 
   return (
@@ -18,7 +22,18 @@ export default function ProfileDashboardComponent() {
             />
             <div className="detailItem">
               <p>{profile.userName} </p>
-              <button>Editar</button>
+              <button
+                onClick={() => {
+                  onMostrar();
+                  setProfileSelected({
+                    idUser: profile.idUser,
+                    userName: profile.userName,
+                    urlImageProfile: profile.urlImageProfile,
+                  });
+                }}
+              >
+                Editar
+              </button>
             </div>
           </div>
         ))}
